@@ -7,10 +7,6 @@ cursors.forEach((cursor, index) => {
   let rotate = $(cursor).find(".rotate");
 
   gsap.set(cursor, {
-    xPercent: -80,
-    yPercent: -80,
-    x: 0,
-    y: 0,
     transformOrigin: "-80% -80%"
   });
 

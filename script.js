@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 let container = document.querySelector(".container");
 let cursors = gsap.utils.toArray(".cursor-muva");
+let speed = index * -0.4 + 0.6;
 
 cursors.forEach((cursor, index) => {
   let rotate = $(cursor).find(".rotate");
@@ -11,13 +12,11 @@ cursors.forEach((cursor, index) => {
   });
 
   gsap.set(rotate, { transformOrigin: "80% 80%" });
-
   let rotateTween = gsap.to(rotate, {
-    duration: 0.8,
+    duration: speed,
     paused: true
   });
 
-  let speed = index * -0.4 + 0.8;
   let xTo = gsap.quickTo(cursor, "x", {
     duration: speed,
     ease: "power3.out"
