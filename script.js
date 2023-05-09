@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 let container = document.querySelector(".container");
 let cursors = gsap.utils.toArray(".cursor-muva");
-let speed = index * -0.4 + 0.6;
+let speed = index * -1 + 0.6;
 
 cursors.forEach((cursor, index) => {
   let rotate = $(cursor).find(".rotate");
@@ -13,17 +13,16 @@ cursors.forEach((cursor, index) => {
 
   gsap.set(rotate, { transformOrigin: "80% 80%" });
   let rotateTween = gsap.to(rotate, {
-    duration: speed,
     paused: true
   });
 
   let xTo = gsap.quickTo(cursor, "x", {
     duration: speed,
-    ease: "power3.out"
+    ease: "ease"
   });
   let yTo = gsap.quickTo(cursor, "y", {
     duration: speed,
-    ease: "power3.out"
+    ease: "ease"
   });
 
   let RAD2DEG = 180 / Math.PI;
