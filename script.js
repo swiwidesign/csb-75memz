@@ -24,11 +24,11 @@ cursors.forEach((cursor, index) => {
   let speed = index * -0.1 + 0.8;
   let xTo = gsap.quickTo(cursor, "x", {
     duration: speed,
-    ease: "power2.out"
+    ease: "power3.out"
   });
   let yTo = gsap.quickTo(cursor, "y", {
     duration: speed,
-    ease: "power2.out"
+    ease: "power3.out"
   });
 
   let RAD2DEG = 180 / Math.PI;
