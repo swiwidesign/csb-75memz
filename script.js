@@ -21,7 +21,7 @@ cursors.forEach((cursor, index) => {
     paused: true
   });
 
-  let speed = index * -0.4 + 0.4;
+  let speed = index * -0.4 + 0.8;
   let xTo = gsap.quickTo(cursor, "x", {
     duration: speed,
     ease: "power3.out"
