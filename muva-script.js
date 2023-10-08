@@ -64,7 +64,7 @@ const predefinedColors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6']
     // Logo Scale
 $(".section.is-intro").each(function (index) {
   let triggerElement = $(this);
-  let targetElement = $(".nav_logo");
+  let targetElement = $(".xxx");
 
   let tl = gsap.timeline({
     scrollTrigger: {
