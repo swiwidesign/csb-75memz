@@ -76,7 +76,7 @@ $(".section.is-intro").each(function (index) {
     }
   });
   tl.from(targetElement, {
-    yPercent: -90,
+    y: "-90vh",
     width: "70vw",
     duration: 1
   });
