@@ -109,9 +109,7 @@ let tlMain = gsap.timeline({
     xPercent: -100
     , ease: "none"
 });
-    
-    
-    // MOUSEMOVER
+// MOUSE MOVE
 let containers = document.querySelectorAll(".mousemover");
 
 containers.forEach((container) => {
