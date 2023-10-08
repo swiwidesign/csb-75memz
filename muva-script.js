@@ -77,7 +77,7 @@ $(".section.is-intro").each(function (index) {
   });
   tl.from(targetElement, {
     y: "-70%",
-    width: "80vw",
+    width: "60vw",
     duration: 1
   });
 });
