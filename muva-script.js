@@ -58,6 +58,33 @@ const predefinedColors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6']
     });
 });
 
+    
+//HERO LOGO
+    
+    // Logo Scale
+$(".section.is-intro").each(function (index) {
+  let triggerElement = $(this);
+  let targetElement = $(".nav_logo");
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: triggerElement,
+      // trigger element - viewport
+      start: "top top",
+      end: "bottom top",
+      scrub: 1
+    }
+  });
+  tl.from(targetElement, {
+    y: "-90%",
+    width: "100%",
+    duration: 1
+  });
+});
+    
+    
+    
+    
 // HORIZONTAL
 // Makes scroll timing feel more natural
 function setTrackHeights() {
