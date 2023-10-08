@@ -184,7 +184,8 @@ function setTrackHeights() {
 }
 setTrackHeights(); window.addEventListener("resize", function () {
     setTrackHeights();
-}); < /script> < script >
+}); 
+    
 // Horizontal scroll
 let tlMain = gsap.timeline({
     scrollTrigger: {
