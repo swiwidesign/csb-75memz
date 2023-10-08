@@ -76,7 +76,7 @@ $(".section.is-intro").each(function (index) {
     }
   });
   tl.from(targetElement, {
-    y: "-120%",
+    y: "-90%",
     width: "80vw",
     duration: 1
   });
