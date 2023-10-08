@@ -66,7 +66,7 @@ $(".section.is-intro").each(function (index) {
   let triggerElement = $(this);
   let targetElement = $(".nav_logo");
 
-  let tl = gsap.timeline({
+  let tlLogo = gsap.timeline({
     scrollTrigger: {
       trigger: triggerElement,
       // trigger element - viewport
@@ -75,7 +75,7 @@ $(".section.is-intro").each(function (index) {
       scrub: 2
     }
   });
-  tl.from(targetElement, {
+  tlLogo.from(targetElement, {
     y: "-120%",
     width: "70cqi",
     duration: 1
