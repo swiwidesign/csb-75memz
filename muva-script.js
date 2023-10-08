@@ -72,11 +72,11 @@ $(".section.is-intro").each(function (index) {
       // trigger element - viewport
       start: "top top",
       end: "bottom top",
-      scrub: 1
+      scrub: 2
     }
   });
   tl.from(targetElement, {
-    y: "-70%",
+    y: "-90%",
     width: "70vw",
     duration: 1
   });
