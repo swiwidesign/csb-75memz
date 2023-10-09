@@ -99,7 +99,7 @@ $(".section.is-intro").each(function (index) {
   });
   tlLogo.from(targetElement, {
     y: isMobile ? "-130%" : "-115%" ,
-    width: "80cqi",
+    width: isMobile ? "100cqi": "80cqi",
     duration: 1
   });
 });
