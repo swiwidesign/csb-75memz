@@ -100,7 +100,7 @@ $(".section.is-intro").each(function (index) {
   });
   tlLogo.from(targetElement, {
     y: isMobile ? "-125%" : reduceMotion ? "0%" : "-115%" ,
-    width: isDesktop ? "80cqi": reduceMotion ? "100%" : "100cqi",
+    width: isDesktop ? "80cqi": "100cqi",
     duration: 1
   });
 });
