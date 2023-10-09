@@ -105,7 +105,7 @@ $(".section.is-intro").each(function (index) {
 });
     
 
-}); 
+
     
     
     
@@ -179,4 +179,6 @@ let cursors = gsap.utils.toArray(".cursor-muva"); cursors.forEach((cursor, index
         }
     });
 });
+        
+        }); 
 });
