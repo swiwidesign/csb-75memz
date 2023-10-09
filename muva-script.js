@@ -102,7 +102,7 @@ $(".section.is-intro").each(function (index) {
     }
   });
   tlLogo.from(targetElement, {
-    y: isMobile ? "-150%" : "-115%" ,
+    y: isMobile ? "-180%" : "-115%" ,
     width: isDesktop ? "75cqi": "100cqi",
     duration: 1
   });
