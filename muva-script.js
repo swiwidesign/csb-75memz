@@ -81,8 +81,9 @@ const predefinedColors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6']
   // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
   let { isDesktop, isTablet, isMobile, reduceMotion } = context.conditions;
 
+        
+        
   //HERO LOGO
-    
     // Logo Scale
 $(".section.is-intro").each(function (index) {
   let triggerElement = $(this);
@@ -99,16 +100,12 @@ $(".section.is-intro").each(function (index) {
   });
   tlLogo.from(targetElement, {
     y: isMobile ? "-130%" : "-115%" ,
-    width: isDesktop ? "80cqi": "100cqi",
+    width: isDesktop ? "10cqi": "100cqi",
     duration: 1
   });
 });
     
 
-
-    
-    
-    
     
     
 // HORIZONTAL
@@ -135,6 +132,10 @@ let tlMain = gsap.timeline({
     xPercent: -100
     , ease: "none"
 });
+        
+        
+        
+        
 // MOUSE MOVE
 let container = document.querySelector(".mousemover");
 let cursors = gsap.utils.toArray(".cursor-muva"); cursors.forEach((cursor, index) => {
