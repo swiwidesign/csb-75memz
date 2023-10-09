@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+// Get the reference to the .pathmover div element
+var pathMoverDiv = document.querySelector('.pathmover');
+
+// Define the SVG code as a string
+var svgCode = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Keyshape -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
     <g id="b" data-name="muva icon-colour-neg RGB" transform="translate(77.39,93.988) translate(-77.39,-93.988)">
@@ -51,4 +55,8 @@ var tl=ks.animate('#c',[{p:'mpath',t:[96,337,578,819,923,1027,1149,1295,1439,164
 {autoremove:false}).range(0,9900).loop(true);
 if(document.location.search.substr(1).split('&amp;').indexOf('global=paused')&gt;=0)ks.globalPause();})(KeyshapeJS);
 </script>
-</svg>
+</svg>>';
+
+// Set the SVG code as the innerHTML of the .pathmover div
+pathMoverDiv.innerHTML = svgCode;
+
