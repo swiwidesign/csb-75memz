@@ -45,7 +45,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
         connectToScrollTrigger();
     }
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-// CHANGE COLOUR ON HOVER
+
+    
+    
+        // CHANGE COLOUR ON HOVER
 const links = document.querySelectorAll('a');
 const predefinedColors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6']; links.forEach((link) => {
     link.addEventListener('mouseenter', () => {
@@ -59,7 +62,26 @@ const predefinedColors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6']
 });
 
     
-//HERO LOGO
+    
+    //GSAP CODE
+    //MEDIA QUERIES
+    let mm = gsap.matchMedia();
+    
+    
+    mm.add({
+
+  // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+  isDesktop: `(min-width: 992px)`,
+  isTablet: `(max-width: 991px)`,
+  isMobile: `(max-width: 479px)`,
+  reduceMotion: "(prefers-reduced-motion: reduce)"
+
+}, (context) => {
+
+  // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+  let { isDesktop, isTablet, isMobile, reduceMotion } = context.conditions;
+
+  //HERO LOGO
     
     // Logo Scale
 $(".section.is-intro").each(function (index) {
@@ -76,11 +98,15 @@ $(".section.is-intro").each(function (index) {
     }
   });
   tlLogo.from(targetElement, {
-    y: "-130%",
+    y: isDesktop ? "-120%" : "-130%" ,
     width: "80cqi",
     duration: 1
   });
 });
+    
+
+}); 
+    
     
     
     
