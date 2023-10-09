@@ -98,7 +98,7 @@ $(".section.is-intro").each(function (index) {
     }
   });
   tlLogo.from(targetElement, {
-    y: isDesktop ? "-120%" : "-130%" ,
+    y: isDesktop ? "-110%" : "-130%" ,
     width: "80cqi",
     duration: 1
   });
