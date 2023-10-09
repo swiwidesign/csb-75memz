@@ -1,10 +1,8 @@
 // Get the reference to the .pathmover div element
 var pathMoverDiv = document.querySelector('.pathmover');
 
-// Define the SVG code as a string
-var svgCode = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Keyshape -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+// Define the complete SVG code as a string
+var svgCode = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
     <g id="b" data-name="muva icon-colour-neg RGB" transform="translate(77.39,93.988) translate(-77.39,-93.988)">
         <path id="c" data-name="Path 8735" d="M51.174,25.421L123.533,83.571L123.533,86.532L0.388,75.856L0.388,111.777L123.536,101.45L123.536,104.42L51.174,162.563L76.57,187.959L154.428,93.99L76.57,0.025L51.174,25.421Z" fill="#bf66ff" stroke-width="0" transform="translate(-101.415,198.48) rotate(80.1545) translate(0,0) translate(-77.408,-93.992)"/>
         <path id="d" data-name="Path 8736" d="M51.178,25.418L123.533,83.568L123.537,86.534L0.388,75.856L0.388,111.777C0.388,111.777,123.538,101.452,123.538,101.452L123.538,104.413L51.177,162.561L76.573,187.957L154.433,93.99L76.572,0.022L51.178,25.418Z" fill="#eb4646" stroke-width="0" transform="translate(-101.415,198.48) rotate(80.1545) translate(0,0) translate(-77.4105,-93.9895)"/>
@@ -55,8 +53,7 @@ var tl=ks.animate('#c',[{p:'mpath',t:[96,337,578,819,923,1027,1149,1295,1439,164
 {autoremove:false}).range(0,9900).loop(true);
 if(document.location.search.substr(1).split('&amp;').indexOf('global=paused')&gt;=0)ks.globalPause();})(KeyshapeJS);
 </script>
-</svg>>';
+</svg>>`;
 
 // Set the SVG code as the innerHTML of the .pathmover div
 pathMoverDiv.innerHTML = svgCode;
-
