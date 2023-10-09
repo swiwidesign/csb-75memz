@@ -76,8 +76,8 @@ $(".section.is-intro").each(function (index) {
     }
   });
   tlLogo.from(targetElement, {
-    y: "-20svh",
-    width: "70cqi",
+    y: "-130%",
+    width: "80cqi",
     duration: 1
   });
 });
