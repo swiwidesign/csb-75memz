@@ -2,7 +2,7 @@
 // Code that runs on pageload
 window.onload = function() {
   gsap.to(".loader", {
-    xPercent: -100,
+    opacity: 0,
     duration: 2,
     onComplete: () => {
       gsap.set(".loader", { display: "none" });
@@ -23,10 +23,10 @@ $(document).ready(function () {
         gsap.fromTo(
           ".loader",
           {
-            xPercent: -100
+            opacity: 0
           },
           {
-            xPercent: 0,
+            opacity: 1,
             onComplete: () => {
               window.location = destination;
             }
