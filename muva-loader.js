@@ -23,10 +23,10 @@ $(document).ready(function () {
         gsap.fromTo(
           ".loader",
           {
-            opacity: 0
+            yPercent: -100,
           },
           {
-            opacity: 1,
+            yPercent: 0,,
             onComplete: () => {
               window.location = destination;
             }
