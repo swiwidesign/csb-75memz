@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     "use strict";
     if (Webflow.env("editor") === undefined) {
         const lenis = new Lenis({
-            duration: 0
+            duration: 1.2
             , easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
             , lerp: 0.1
             , wheelMultiplier: 0.7
